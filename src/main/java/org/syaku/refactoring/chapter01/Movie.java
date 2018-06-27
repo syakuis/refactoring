@@ -8,9 +8,13 @@ import lombok.Getter;
  * @since 2018. 6. 27.
  */
 @AllArgsConstructor
-public class Rental {
+class Movie {
+  public static final int CHILDRENS = 2;
+  public static final int REGULAR = 0;
+  public static final int NEW_RELEASE = 1;
+
   @Getter
-  private Movie movie;
+  private String title;
   @Getter
-  private int dayRented;
+  private int priceCode;
 }
